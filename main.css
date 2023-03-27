@@ -1,4 +1,5 @@
 .navbar-box {
+    font-size: large;
     background-color: #6FB3BB;
     color: white;
     width: 100%;
@@ -24,7 +25,6 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: #eeeeee;
-    overscroll-behavior-x: none;
 }
 .learn-link {
     color:black;
@@ -34,8 +34,9 @@ body {
     padding-left: 20px;
 }
 .short-desc {
-    max-width: 575px;
+    max-width: 675px;
     padding-left:20px;
+    font-size: 1.2em;
 }
 .search-in{
     margin-left: 20px;
