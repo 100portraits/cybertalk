@@ -30,6 +30,7 @@ body {
 }
 .text-content {
     padding-left: 20px;
+    width: 60vw;
 }
 .short-desc {
     max-width:90%;
@@ -38,17 +39,23 @@ body {
 .columns {
     display: flex;
 }
+.image1 img {
+    width: 100%;
+    height: auto;
+}
 .image1 {
-    margin: 20px
+    padding: 20px;
+    width: 40vw;
 }
 .example-grid{
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    margin: 20px;
+
     width: 90%;
 }
-.example-tool {
+.example-tool img {
     background-color: white;
-    padding: 30px;
+    width: 10vw;
+    height: auto;
 }
