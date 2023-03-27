@@ -32,6 +32,12 @@ body {
     padding-left: 20px;
 }
 .short-desc {
-    max-width:50%;
+    max-width:90%;
     font-size: 1.2em;
+}
+.columns {
+    display: flex;
+}
+.image1 {
+    margin: 20px
 }
