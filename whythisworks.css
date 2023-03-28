@@ -45,3 +45,11 @@ body {
 .image1 img {
     width: 40vw;
 }
+@media screen and (max-width: 800px) {
+    .columns {
+      flex-direction: column;
+    }
+    .image1, .image1 img {
+        width: 80vw;
+    }
+  }

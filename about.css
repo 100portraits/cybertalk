@@ -30,6 +30,7 @@ body {
 }
 .text-content {
     padding-left: 20px;
+    order: 1;
 }
 .short-desc {
     max-width:90%;
@@ -37,11 +38,21 @@ body {
 }
 .columns {
     display: flex;
+    flex-direction: row;
 }
 .image1 {
+    order: 2;
     margin: 20px;
     width: 40vw;
 }
 .image1 img {
     width: 40vw;
 }
+@media screen and (max-width: 800px) {
+    .columns {
+      flex-direction: column;
+    }
+    .image1, .image1 img {
+        width: 80vw;
+    }
+  }
