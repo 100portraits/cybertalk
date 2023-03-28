@@ -73,3 +73,12 @@ a:hover {
     padding: 20px;
     margin:0
 }
+.en:hover, .nl:hover{
+    background-color: white;
+    color: #6FB3BB
+}
+.en, .nl {
+    padding: 10px;
+    margin: 2px;
+    border: 1px solid white;
+}
