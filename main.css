@@ -82,14 +82,17 @@ a:hover {
     color:black;
 }
 .footer-box {
+    display: flex;
+    justify-content: space-between;
     margin: 0;
     width: 100%;
     background-color: #a9d4ef;
     color: rgb(58, 57, 57);
     
 }
-.footer-box h3, .footer-box p{
+.footer-box p{
     padding: 20px;
+    display: inline-block;
     margin:0
 }
 
