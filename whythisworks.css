@@ -58,6 +58,8 @@ body {
 .short-desc {
     max-width:90%;
     font-size: 1.2em;
+    line-height: 1.6;
+
 }
 .columns {
     display: flex;

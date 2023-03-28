@@ -75,7 +75,7 @@ body {
     margin:20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 1em 1em;
+    grid-gap: 1.2em 1.2em;
 }
 .tools-grid a {
     color: rgb(58, 57, 57);

@@ -50,10 +50,13 @@ body {
 }
 .header-innovative {
     font-weight: 500;
+    
     font-size: 2.5em;
 }
 .text-content {
     padding-left: 20px;
+    line-height: 1.6;
+
     order: 1;
 }
 .short-desc {

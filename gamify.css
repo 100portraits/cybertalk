@@ -57,6 +57,7 @@ body {
 }
 .short-desc {
     max-width:90%;
+    line-height: 1.6;
     font-size: 1.1em;
 }
 .columns {
