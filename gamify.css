@@ -70,6 +70,19 @@ body {
 .image1 img {
     width: 40vw;
 }
+.example-grid{
+    display: grid;
+    gap: 20px;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+}
+.example-tool img {
+    background-color: white;
+    width: 18vw;
+    height: auto;
+}
+
 @media screen and (max-width: 800px) {
     .columns {
       flex-direction: column;
@@ -80,19 +93,11 @@ body {
     .image1, .image1 img {
         width: 80vw;
     }
+    .example-tool img {
+       width: 33vw; 
+    }
   }
-.example-grid{
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
 
-    width: 90%;
-}
-.example-tool img {
-    background-color: white;
-    width: 10vw;
-    height: auto;
-}
 #modal {
     width: 100%;
     height: 100%;

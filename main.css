@@ -106,7 +106,7 @@ body {
 }
 .toolbg{
     background-color: white;
-    border-radius: 15px;
+    border-radius: 0px;
     height: 200px;
     padding: 10px;
     box-shadow: 5px 5px 5px rgb(233, 231, 231);
