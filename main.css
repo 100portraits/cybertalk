@@ -47,6 +47,10 @@ body {
 .learn-link {
     color:black;
     text-decoration: underline;
+    font-size: large;
+}
+.learn-link:hover {
+    font-size:large;
 }
 .header-innovative {
     padding-left: 20px;
