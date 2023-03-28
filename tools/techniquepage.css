@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'sf';
-    src: url('SF-Pro-Text-Light.ttf');
+    src: url('../SF-Pro-Text-Light.ttf');
 
 }
 html {
@@ -84,6 +84,7 @@ body {
     background-color: white;
     width: 18vw;
     height: auto;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
