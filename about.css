@@ -39,5 +39,9 @@ body {
     display: flex;
 }
 .image1 {
-    margin: 20px
+    margin: 20px;
+    width: 40vw;
+}
+.image1 img {
+    width: 40vw;
 }
