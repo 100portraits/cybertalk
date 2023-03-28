@@ -54,6 +54,8 @@ body {
 }
 .header-innovative {
     padding-left: 20px;
+    font-weight: 500;
+    font-size: 2.5em;
 }
 .short-desc {
     max-width: 675px;
@@ -72,7 +74,7 @@ body {
     grid-gap: 1em 1em;
 }
 .tools-grid a {
-    color: black;
+    color: rgb(58, 57, 57);
 }
 
 a:hover { 
@@ -82,8 +84,8 @@ a:hover {
 .footer-box {
     margin: 0;
     width: 100%;
-    background-color: #6FB3BB;
-    color: white;
+    background-color: #a9d4ef;
+    color: rgb(58, 57, 57);
     
 }
 .footer-box h3, .footer-box p{
@@ -97,7 +99,7 @@ a:hover {
     box-shadow: 6px 6px 6px rgb(215, 213, 213); 
 }
 .tooltitle{
-    color: black;
+    color: rgb(58, 57, 57);
 }
 .toolbg{
     background-color: white;
