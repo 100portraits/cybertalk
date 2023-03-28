@@ -1,32 +1,56 @@
+@font-face {
+    font-family: 'sf';
+    src: url('SF-Pro-Text-Light.ttf');
+
+}
 .navbar-box {
     font-size: large;
-    background-color: #6FB3BB;
-    color: white;
+    background-color: #a9d4ef;
+    color: #f2f2f2;
     width: 100%;
     margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 40px;
 }
 a {
-    color: white;
+    color: rgb(58, 57, 57);
+    font-family: 'sf';
+    font-size: medium;
     text-decoration: none;
+    transition: all 0.1s ease-in-out;
 }
-a:hover {
-    text-decoration: underline;
-}
+
+
 .navbar-pages {
     display: flex;
     gap: 20px;
     padding: 20px;
+    align-items: center;
 }
 .navbar-lang {
+    display: flex;
+    color: rgb(58, 57, 57);
+    font-family: 'sf', sans-serif;
+    font-size: medium;
+    gap: 20px;
     padding: 20px;
+    align-items: center;
+}
+a:hover { 
+    font-size: 16.3px;
+    color:black;
 }
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: sf;
+    color: rgb(58, 57, 57);
     margin: 0;
     background-color: #eeeeee;
+}
+.header-innovative {
+    font-weight: 500;
+    font-size: 2.5em;
 }
 .text-content {
     padding-left: 20px;
@@ -56,12 +80,3 @@ body {
         width: 80vw;
     }
   }
-.en:hover, .nl:hover{
-    background-color: white;
-    color: #6FB3BB
-}
-.en, .nl {
-    padding: 10px;
-    margin: 2px;
-    border: 1px solid white;
-}

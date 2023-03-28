@@ -38,16 +38,20 @@ a {
     padding: 20px;
     align-items: center;
 }
+.learn-link {
+    color:black;
+    text-decoration: underline;
+    font-size: large;
+}
+a:hover { 
+    font-size: 16.3px;
+    color:black;
+}
 body {
     font-family: sf;
     color: rgb(58, 57, 57);
     margin: 0;
     background-color: #eeeeee;
-}
-.learn-link {
-    color:black;
-    text-decoration: underline;
-    font-size: large;
 }
 .learn-link:hover {
     font-size:large;
@@ -77,10 +81,6 @@ body {
     color: rgb(58, 57, 57);
 }
 
-a:hover { 
-    font-size: 16.3px;
-    color:black;
-}
 .footer-box {
     display: flex;
     justify-content: space-between;
