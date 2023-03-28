@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Gamified Learning</title>
+    <title>Audio and Video | Digital Learning Techniques</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='techniquepage.css'>
 </head>
@@ -19,36 +19,10 @@
     <div class="columns">
         <div class="text-content">
             <div><h1 class="header-innovative">Audio and Video</h1></div>
-            <p class="short-desc">Gamified learning is an educational approach that combines game elements with traditional learning methods to make learning more engaging and enjoyable. This approach can be highly effective in motivating learners, enhancing their retention and comprehension, and encouraging them to continue their education beyond the classroom. Gamified learning tools like these can help learners develop a passion for learning and motivate them to continue exploring new subjects and skills.
-                <br><br>
-                Tools can be dedicated for certain topics such as :
-                <ul>
-                    <li>
-                        language learning
-                    </li>
-                    <li>
-                        cybersecurity education
-                    </li>
-                    <li>
-                        programming
-                    </li>
-                </ul><br>
-                
-                or
+            <p class="short-desc">Audiovisual tools are a powerful way for teachers to create engaging and interactive learning experiences for their students. By incorporating videos, animations, and other multimedia elements into their lessons, teachers can help students visualise the studied concept. 
+<br><br>
+                Use of audiovisual tools can also help to improve student engagement and retention, as students are more likely to remember information that they have seen and heard in action. Additionally, it can be used to promote creativity and critical thinking skills, as students are encouraged to think about how to effectively communicate ideas through different media.
                  
-                can help you with creating:
-
-                <ul>
-                    <li>
-                        quizzes
-                    </li>
-                    <li>
-                        flashcards
-                    </li>
-                    <li>
-                        surveys
-                    </li>
-                </ul><br>
             </p>
             
             
@@ -56,19 +30,57 @@
         <div class="image1">
             <h3>Tools we recommend:</h3>
             <div class="example-grid">
-                <div class="example-tool" onclick="openModal()"><img alt="cheese" src="https://placehold.co/400"></div>
-                <div class="example-tool"><img alt="cheese" src="https://placehold.co/400"></div>
-                <div class="example-tool"><img alt="cheese" src="https://placehold.co/400"></div>
-                <div class="example-tool"><img alt="cheese" src="https://placehold.co/400"></div>
-                <div class="example-tool"><img alt="cheese" src="https://placehold.co/400"></div>
+                <div class="example-tool" onclick="openModal('yt')"><img alt="cheese" src="https://static.vecteezy.com/system/resources/previews/018/930/575/original/youtube-logo-youtube-icon-transparent-free-png.png"></div>
+                <div class="example-tool" onclick="openModal('garage')"><img alt="cheese" src="https://upload.wikimedia.org/wikipedia/en/f/f7/GarageBand_App.png"></div>
+                <div class="example-tool" onclick="openModal('edpuzzle')"><img alt="cheese" src="https://edpuzzle.imgix.net/edpuzzle-logos/vertical-logo.png"></div>
+
+                <div class="example-tool" onclick="openModal('ted')"><img alt="cheese" src="https://ed.ted.com/teded-logo-600-600.png"></div>
+
 
             </div>
         </div>
     </div>
     <div class="modals">
-        <div id="modal">
+        <div class='modal' id="modalyt">
             <div class="modal-content">
-                <h2>HackShield</h2>
+                <div>
+                    <h2>YouTube</h2>
+                    <p>YouTube is a video sharing site where users can upload or watch videos. The website also features many educational channels about a wide variety of subjects, such as Khan Academy, Vsauce, and Numberphile that make learning fun, easy, and accessible. 
+                    </p>
+                </div>
+                <button onclick="closeModal()" class="closebtn">Close</button>
+            </div>
+        </div>
+        <div class='modal' id="modalgarage">
+            <div class="modal-content">
+                <div>
+                    <h2>Garageband</h2>
+                    <p>Garageband for Mac offers an intuitive method to start recording, editing, and producing your own music. The application uses a wide variety of instruments, teaching children how each one sounds and how each could be applied. Built-in tutorials can be used to learn music theory and playing different types of instruments. 
+ 
+                    </p>
+                </div>
+                <button onclick="closeModal()" class="closebtn">Close</button>
+            </div>
+        </div>
+        <div class='modal' id="modaledpuzzle">
+            <div class="modal-content">
+                <div>
+                    <h2>Edpuzzle</h2>
+                    <p>Edpuzzle is a platform for turning any video into a lesson. Teachers can use videos from YouTube, other teachers in the community, or their own, to easily incorporate it with their own questions or audio to create a lesson for their students. With Edpuzzle, the teacher has an option to use the made material live in the classroom or assign it to the students and get analytics such as who watched the video, who didn't understand the lesson, and who did a good job. 
+                    </p>
+
+                </div>
+                <button onclick="closeModal()" class="closebtn">Close</button>
+            </div>
+        </div>
+        <div class='modal' id="modalted">
+            <div class="modal-content">
+                <div>
+                    <h2>Ted-Ed</h2>
+                    <p>TED-Ed is an educational platform that features a wide range of educational videos on various topics, including science, history, and literature. The platform offers animated and live-action videos that are designed to engage students and provide a fun and interactive way to learn. TED-Ed also features a variety of tools and resources, including quizzes, discussion questions, and suggested readings, to help teachers and students dive deeper into the topics covered in the videos. In addition to the pre-made videos, TED-Ed also offers a platform for teachers to create and share their own customised lessons based on the videos, making it a valuable resource for educators. 
+                    </p>
+
+                </div>
                 <button onclick="closeModal()" class="closebtn">Close</button>
             </div>
         </div>

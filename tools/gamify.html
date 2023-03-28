@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Gamified Learning</title>
+    <title>Gamification | Digital Learning Techniques</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='techniquepage.css'>
 </head>
@@ -19,36 +19,7 @@
     <div class="columns">
         <div class="text-content">
             <div><h1 class="header-innovative">Gamification</h1></div>
-            <p class="short-desc">Gamified learning is an educational approach that combines game elements with traditional learning methods to make learning more engaging and enjoyable. This approach can be highly effective in motivating learners, enhancing their retention and comprehension, and encouraging them to continue their education beyond the classroom. Gamified learning tools like these can help learners develop a passion for learning and motivate them to continue exploring new subjects and skills.
-                <br><br>
-                Tools can be dedicated for certain topics such as :
-                <ul>
-                    <li>
-                        language learning
-                    </li>
-                    <li>
-                        cybersecurity education
-                    </li>
-                    <li>
-                        programming
-                    </li>
-                </ul><br>
-                
-                or
-                 
-                can help you with creating:
-
-                <ul>
-                    <li>
-                        quizzes
-                    </li>
-                    <li>
-                        flashcards
-                    </li>
-                    <li>
-                        surveys
-                    </li>
-                </ul><br>
+            <p class="short-desc">Gamified learning is an educational approach that combines game elements with traditional learning methods to make learning more engaging and enjoyable. This approach can be highly effective in motivating learners, enhancing their retention and comprehension, and encouraging them to continue their education beyond the classroom. Gamified learning tools like these can help learners develop a passion for learning and motivate them to continue exploring new subjects and skills. 
             </p>
             
             
@@ -56,19 +27,53 @@
         <div class="image1">
             <h3>Tools we recommend:</h3>
             <div class="example-grid">
-                <div class="example-tool" onclick="openModal()"><img alt="cheese" src="https://placehold.co/400"></div>
-                <div class="example-tool"><img alt="cheese" src="https://placehold.co/400"></div>
-                <div class="example-tool"><img alt="cheese" src="https://placehold.co/400"></div>
-                <div class="example-tool"><img alt="cheese" src="https://placehold.co/400"></div>
-                <div class="example-tool"><img alt="cheese" src="https://placehold.co/400"></div>
+                <div class="example-tool" onclick="openModal('hack')"><img alt="cheese" src="https://play-lh.googleusercontent.com/v0E848aPskTtdujYtTZzhRyGGcVkk8bKYFLm8NCP9IDEqBxmoDN13UOVrEcYV64WBMiK"></div>
+                <div class="example-tool" onclick="openModal('duo')"><img alt="cheese" src="https://1000logos.net/wp-content/uploads/2020/10/Duolingo-logo.png"></div>
+                <div class="example-tool" onclick="openModal('mine')"><img alt="cheese" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/minecraft_logo_icon_168974.png"></div>
+
+                <div class="example-tool" onclick="openModal('kahoot')"><img alt="cheese" src="https://static.vecteezy.com/ti/gratis-vector/p3/18970044-kahoot-logo-symbool-redactioneel-gratis-vector.jpg"></div>
+
 
             </div>
         </div>
     </div>
     <div class="modals">
-        <div id="modal">
+        <div class='modal' id="modalhack">
             <div class="modal-content">
-                <h2>HackShield</h2>
+                <div>
+                    <h2>HackShield</h2>
+                    <p>PowerPoint is a presentation software that allows users to create slideshows for a variety of purposes. With PowerPoint, users can add text, images, videos, charts, graphs, and animations to their presentations. The software features design templates and themes to create professional-looking presentations with minimal effort. PowerPoint is widely used by educators and business professionals for presentations.</p>
+                </div>
+                <button onclick="closeModal()" class="closebtn">Close</button>
+            </div>
+        </div>
+        <div class='modal' id="modalduo">
+            <div class="modal-content">
+                <div>
+                    <h2>Duolingo</h2>
+                    <p>Canva is a popular graphic design platform that allows users to create a wide range of visual content, including presentations, posters, social media graphics, and more. With Canva, users can choose from a vast library of templates, images, and design elements to create stunning visuals for various purposes. The platform makes it easy for users to customize their designs and create high-quality visuals without any prior design experience. Canva is a versatile tool that can be used by educators, students, and professionals to create engaging and visually appealing content for their audiences. 
+                    </p>
+                </div>
+                <button onclick="closeModal()" class="closebtn">Close</button>
+            </div>
+        </div>
+        <div class='modal' id="modalmine">
+            <div class="modal-content">
+                <div>
+                    <h2>Minecraft</h2>
+                    <p>Prezi is a presentation software that offers a unique and dynamic approach to creating visual content. Unlike traditional slideshow presentation tools, Prezi allows users to create non-linear, zoomable presentations that can be customized with a variety of multimedia elements, including images, videos, and animations. Prezi's intuitive interface and customizable templates make it easy for users to create high-quality presentations without any prior design experience. Overall, Prezi is a powerful tool for educators, business professionals, and creatives.</p>
+
+                </div>
+                <button onclick="closeModal()" class="closebtn">Close</button>
+            </div>
+        </div>
+        <div class='modal' id="modalkahoot">
+            <div class="modal-content">
+                <div>
+                    <h2>Kahoot</h2>
+                    <p>Prezi is a presentation software that offers a unique and dynamic approach to creating visual content. Unlike traditional slideshow presentation tools, Prezi allows users to create non-linear, zoomable presentations that can be customized with a variety of multimedia elements, including images, videos, and animations. Prezi's intuitive interface and customizable templates make it easy for users to create high-quality presentations without any prior design experience. Overall, Prezi is a powerful tool for educators, business professionals, and creatives.</p>
+
+                </div>
                 <button onclick="closeModal()" class="closebtn">Close</button>
             </div>
         </div>

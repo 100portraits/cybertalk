@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Gamified Learning</title>
+    <title>Presentation | Digital Learning Techniques</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='techniquepage.css'>
 </head>
@@ -19,36 +19,7 @@
     <div class="columns">
         <div class="text-content">
             <div><h1 class="header-innovative">Presentation</h1></div>
-            <p class="short-desc">Gamified learning is an educational approach that combines game elements with traditional learning methods to make learning more engaging and enjoyable. This approach can be highly effective in motivating learners, enhancing their retention and comprehension, and encouraging them to continue their education beyond the classroom. Gamified learning tools like these can help learners develop a passion for learning and motivate them to continue exploring new subjects and skills.
-                <br><br>
-                Tools can be dedicated for certain topics such as :
-                <ul>
-                    <li>
-                        language learning
-                    </li>
-                    <li>
-                        cybersecurity education
-                    </li>
-                    <li>
-                        programming
-                    </li>
-                </ul><br>
-                
-                or
-                 
-                can help you with creating:
-
-                <ul>
-                    <li>
-                        quizzes
-                    </li>
-                    <li>
-                        flashcards
-                    </li>
-                    <li>
-                        surveys
-                    </li>
-                </ul><br>
+            <p class="short-desc">One of the ways to create a presentation is to use slideshows. Slideshows are a powerful technique for teachers to communicate teaching material in an organised and visually appealing way. They help to improve retention and understanding of information by making it more memorable and engaging. Not only that but by allowing students to create their own presentations, students can develop critical thinking, problem-solving skills, enhance communication, public speaking abilities, and promote creativity and innovation. 
             </p>
             
             
@@ -56,20 +27,42 @@
         <div class="image1">
             <h3>Tools we recommend:</h3>
             <div class="example-grid">
-                <div class="example-tool" onclick="openModal()"><img alt="cheese" src="https://placehold.co/400"></div>
-                <div class="example-tool"><img alt="cheese" src="https://placehold.co/400"></div>
-                <div class="example-tool"><img alt="cheese" src="https://placehold.co/400"></div>
-                <div class="example-tool"><img alt="cheese" src="https://placehold.co/400"></div>
-                <div class="example-tool"><img alt="cheese" src="https://placehold.co/400"></div>
+                <div class="example-tool" onclick="openModal('ppt')"><img alt="cheese" src="https://www.logo.wine/a/logo/Microsoft_PowerPoint/Microsoft_PowerPoint-Logo.wine.svg"></div>
+                <div class="example-tool" onclick="openModal('canva')"><img alt="cheese" src="https://www.bookmarks.design/media/image/canva-logo-maker.jpg"></div>
+                <div class="example-tool" onclick="openModal('prezi')"><img alt="cheese" src="https://assets.prezicdn.net/assets-versioned/coverservice-versioned/3624-0d86795/common/img/prezi-logo-for-share.png"></div>
+
 
             </div>
         </div>
     </div>
     <div class="modals">
-        <div id="modal">
+        <div class='modal' id="modalppt">
             <div class="modal-content">
-                <h2>HackShield</h2>
-                <button onclick="closeModal()" class="closebtn">Close</button>
+                <div>
+                    <h2>Powerpoint</h2>
+                    <p>PowerPoint is a presentation software that allows users to create slideshows for a variety of purposes. With PowerPoint, users can add text, images, videos, charts, graphs, and animations to their presentations. The software features design templates and themes to create professional-looking presentations with minimal effort. PowerPoint is widely used by educators and business professionals for presentations.</p>
+                </div>
+                <button onclick="closeModal('ppt')" class="closebtn">Close</button>
+            </div>
+        </div>
+        <div class='modal' id="modalcanva">
+            <div class="modal-content">
+                <div>
+                    <h2>Canva</h2>
+                    <p>Canva is a popular graphic design platform that allows users to create a wide range of visual content, including presentations, posters, social media graphics, and more. With Canva, users can choose from a vast library of templates, images, and design elements to create stunning visuals for various purposes. The platform makes it easy for users to customize their designs and create high-quality visuals without any prior design experience. Canva is a versatile tool that can be used by educators, students, and professionals to create engaging and visually appealing content for their audiences. 
+                    </p>
+                </div>
+                <button onclick="closeModal('canva')" class="closebtn">Close</button>
+            </div>
+        </div>
+        <div class='modal' id="modalprezi">
+            <div class="modal-content">
+                <div>
+                    <h2>Prezi</h2>
+                    <p>Prezi is a presentation software that offers a unique and dynamic approach to creating visual content. Unlike traditional slideshow presentation tools, Prezi allows users to create non-linear, zoomable presentations that can be customized with a variety of multimedia elements, including images, videos, and animations. Prezi's intuitive interface and customizable templates make it easy for users to create high-quality presentations without any prior design experience. Overall, Prezi is a powerful tool for educators, business professionals, and creatives.</p>
+
+                </div>
+                <button onclick="closeModal('prezi')" class="closebtn">Close</button>
             </div>
         </div>
     </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Gamified Learning</title>
+    <title>Collaboration | Digital Learning Techniques</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='techniquepage.css'>
 </head>
@@ -19,36 +19,9 @@
     <div class="columns">
         <div class="text-content">
             <div><h1 class="header-innovative">Collaboration</h1></div>
-            <p class="short-desc">Gamified learning is an educational approach that combines game elements with traditional learning methods to make learning more engaging and enjoyable. This approach can be highly effective in motivating learners, enhancing their retention and comprehension, and encouraging them to continue their education beyond the classroom. Gamified learning tools like these can help learners develop a passion for learning and motivate them to continue exploring new subjects and skills.
-                <br><br>
-                Tools can be dedicated for certain topics such as :
-                <ul>
-                    <li>
-                        language learning
-                    </li>
-                    <li>
-                        cybersecurity education
-                    </li>
-                    <li>
-                        programming
-                    </li>
-                </ul><br>
-                
-                or
-                 
-                can help you with creating:
+            <p class="short-desc">
+                Collaborative spaces are great tools for students to work together, brainstorm ideas, and share information. Similarly to a whiteboard, students can create mind maps, use sticky notes, and draw diagrams. It helps students to visualise and communicate their knowledge. 
 
-                <ul>
-                    <li>
-                        quizzes
-                    </li>
-                    <li>
-                        flashcards
-                    </li>
-                    <li>
-                        surveys
-                    </li>
-                </ul><br>
             </p>
             
             
@@ -56,19 +29,60 @@
         <div class="image1">
             <h3>Tools we recommend:</h3>
             <div class="example-grid">
-                <div class="example-tool" onclick="openModal()"><img alt="cheese" src="https://placehold.co/400"></div>
-                <div class="example-tool"><img alt="cheese" src="https://placehold.co/400"></div>
-                <div class="example-tool"><img alt="cheese" src="https://placehold.co/400"></div>
-                <div class="example-tool"><img alt="cheese" src="https://placehold.co/400"></div>
-                <div class="example-tool"><img alt="cheese" src="https://placehold.co/400"></div>
+                <div class="example-tool" onclick="openModal('docs')"><img alt="cheese" src="https://cdn-icons-png.flaticon.com/512/5968/5968517.png"></div>
+                <div class="example-tool" onclick="openModal('miro')"><img alt="cheese" src="https://www.gend.co/hubfs/Miro-Logo-Square-Insight-Platforms.png"></div>
+                <div class="example-tool" onclick="openModal('canva')"><img alt="cheese" src="https://assets.stickpng.com/images/5842a622a6515b1e0ad75af9.png"></div>
+                <div class="example-tool" onclick="openModal('jam')"><img alt="cheese" src="https://cdn-icons-png.flaticon.com/512/2965/2965289.png"></div>
+
 
             </div>
         </div>
     </div>
     <div class="modals">
-        <div id="modal">
+        <div class='modal' id="modaldocs">
             <div class="modal-content">
-                <h2>HackShield</h2>
+                <div>
+                    <h2>Google Docs</h2>
+                    <p>Google Docs can be used to create and edit online word documents with peers. These files will be stored in the clouds, so they are easily shared and accessed to anyone with a computer or a phone. 
+
+                    </p>
+                </div>
+                <button onclick="closeModal()" class="closebtn">Close</button>
+            </div>
+        </div>
+        <div class='modal' id="modalmiro">
+            <div class="modal-content">
+                <div>
+                    <h2>Miro</h2>
+                    <p>Miro is an online tool used to brainstorm, create concepts, and visualise ideas. With the use of sticky notes and indicator arrows, it has become a lot easier to share ideas that are difficult to put into words.
+
+                    </p>
+                </div>
+                <button onclick="closeModal()" class="closebtn">Close</button>
+            </div>
+        </div>
+        <div class='modal' id="modalcanva">
+            <div class="modal-content">
+                <div>
+                    <h2>Canva </h2>
+                    <p>Canva is a popular graphic design platform that allows users to create a wide range of visual content, including presentations, posters, social media graphics, and more. With Canva, users can choose from a vast library of templates, images, and design elements to create stunning visuals for various purposes. The platform makes it easy for users to customise their designs and create high-quality visuals without any prior design experience. Canva is a versatile tool that can be used by educators, students, and professionals to create engaging and visually appealing content for their audiences. 
+
+                    </p>
+
+                </div>
+                <button onclick="closeModal()" class="closebtn">Close</button>
+            </div>
+        </div>
+        <div class='modal' id="modaljam">
+            <div class="modal-content">
+                <div>
+                    <h2>Jamboard</h2>
+                    <p>Jamboard is a digital whiteboard developed by Google used for creating diagrams, brainstorming and visualising ideas. Users can create, edit, and share documents, images, and other types of media on the board, and work together. 
+
+ 
+                    </p>
+
+                </div>
                 <button onclick="closeModal()" class="closebtn">Close</button>
             </div>
         </div>
