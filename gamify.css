@@ -3,6 +3,9 @@
     src: url('SF-Pro-Text-Light.ttf');
 
 }
+html {
+    font-family: 'sf';
+}
 .navbar-box {
     font-size: large;
     background-color: #a9d4ef;
@@ -122,17 +125,19 @@ body {
 }
 .closebtn {
     border: 0px;
-    color: white;
-    background-color: #6FB3BB;
+    color:#3A3939;
+    background-color: white;
+    border: 1px solid #a9d4ef;
+
     padding: 10px;
     border-radius: 12%;
     width: max-content;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .closebtn:hover {
-    border: 1px solid #6FB3BB;
-    color: #6FB3BB;
-    background-color: white;
+    border: 1px solid #a9d4ef;
+    color: #3A3939;
+    background-color: #a9d4ef;
     padding: 10px;
     border-radius: 12%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
