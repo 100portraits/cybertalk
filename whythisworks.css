@@ -75,11 +75,10 @@ a:hover {
 }
 
 .footer-box {
-    position: absolute;
-    bottom: 0;
+    
     width: 100%;
     margin: 0;
-    width: 100%;
+
     background-color: #ADD0F8;
     color: rgb(58, 57, 57);
     display: flex;
@@ -135,4 +134,28 @@ a:hover {
     a {
         font-size: small; 
     }
+}
+.content {
+    margin: 40px;
+}
+h2 {
+    margin-bottom: 20px;
+}
+.facts-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.facts-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    height: 300px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+}
+.citation {
+    color: blue;
 }
