@@ -134,19 +134,17 @@ body {
 .closebtn {
     border: 0px;
     color:#3A3939;
-    background-color: white;
-    border: 1px solid #a9d4ef;
-
-    padding: 10px;
+    background-color: #a9d4ef;
+        padding: 10px;
     border-radius: 12%;
     width: max-content;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
 }
 .closebtn:hover {
-    border: 1px solid #a9d4ef;
     color: #3A3939;
     background-color: #a9d4ef;
     padding: 10px;
     border-radius: 12%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
 }

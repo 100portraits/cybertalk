@@ -78,9 +78,10 @@ a:hover {
     bottom: 0;
     width: 100%;
     margin: 0;
-    width: 100%;
     background-color: #ADD0F8;
     color: rgb(58, 57, 57);
+    display: flex;
+    justify-content: space-between;
 }
 .footer-box h3, .footer-box p{
     padding: 20px;
