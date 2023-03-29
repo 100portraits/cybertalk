@@ -159,3 +159,24 @@ h2 {
 .citation {
     color: blue;
 }
+.content2 {
+    background-color: white;
+    padding: 40px;
+
+}
+.resource-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.resource-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    height: 100px;
+    width: 100%;
+    background-color: #eeeeee;
+    padding: 20px;
+}
