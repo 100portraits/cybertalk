@@ -57,6 +57,7 @@ body {
 .text-content {
     padding-left: 20px;
     width: 60vw;
+    background-color: white;
 }
 .short-desc {
     max-width:90%;

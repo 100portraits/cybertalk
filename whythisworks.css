@@ -52,6 +52,7 @@ body {
     color: rgb(58, 57, 57);
     margin: 0;
     background-color: #eeeeee;
+    height: 100%;
 }
 
 .header-innovative {
@@ -73,12 +74,13 @@ a:hover {
 }
 
 .footer-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     margin: 0;
     width: 100%;
     background-color: #ADD0F8;
     color: rgb(58, 57, 57);
-    bottom: 0;
-    position: absolute; 
 }
 .footer-box h3, .footer-box p{
     padding: 20px;
@@ -96,7 +98,6 @@ a:hover {
     padding: 20px;
     background-color: white;
     margin-top: 20px;
-    height: 250px;
   }
   
   .text-container {
@@ -107,7 +108,7 @@ a:hover {
   }
   
   .image-container {
-    width: 500px;
+    width: 40%;
     height: 170px;
     border-radius: 15px;
     overflow: hidden;
@@ -120,23 +121,15 @@ a:hover {
     object-fit: cover;
   }
 
-/*
-.columns {
-    display: flex;
-}
-.image1 {
-    margin: 20px;
-    width: 40vw;
-}
-.image1 img {
-    width: 40vw;
-}
+
 @media screen and (max-width: 800px) {
-    .columns {
+    .header-container {
       flex-direction: column;
     }
-    .image1, .image1 img {
-        width: 80vw;
+    .image-container {
+        width: 80%;
     }
-  }
-*/
+    a {
+        font-size: small; 
+    }
+}

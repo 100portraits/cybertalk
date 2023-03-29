@@ -70,7 +70,7 @@ body {
 .tools-grid{
     margin:20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     grid-gap: 1em 1em;
 }
 .tools-grid div {
@@ -114,7 +114,6 @@ a:hover {
     padding: 20px;
     background-color: white;
     margin-top: 20px;
-    height: 250px;
   }
   
   .text-container {
@@ -125,7 +124,7 @@ a:hover {
   }
   
   .image-container {
-    width: 500px;
+    width: 40%;
     height: 170px;
     border-radius: 15px;
     overflow: hidden;
@@ -137,6 +136,7 @@ a:hover {
     height: 100%;
     object-fit: cover;
   }
+
   
   .search-in {
     background-color: transparent;
@@ -151,3 +151,14 @@ a:hover {
 
 
 
+  @media screen and (max-width: 800px) {
+    .header-container {
+      flex-direction: column;
+    }
+    .image-container {
+        width: 80%;
+    }
+    a {
+        font-size: small; 
+    }
+}
