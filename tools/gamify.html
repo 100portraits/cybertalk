@@ -6,6 +6,12 @@
     <title>Gamification | Digital Learning Techniques</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='techniquepage.css'>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">    
 </head>
 <body>
     <div class="navbar-box">
@@ -26,17 +32,33 @@
         </div>
         <div class="image1">
             <h3>Tools we recommend:</h3>
-            <div class="example-grid">
-                <div class="example-tool" onclick="openModal('hack')"><img alt="cheese" src="https://play-lh.googleusercontent.com/v0E848aPskTtdujYtTZzhRyGGcVkk8bKYFLm8NCP9IDEqBxmoDN13UOVrEcYV64WBMiK"></div>
-                <div class="example-tool" onclick="openModal('duo')"><img alt="cheese" src="https://1000logos.net/wp-content/uploads/2020/10/Duolingo-logo.png"></div>
-                <div class="example-tool" onclick="openModal('mine')"><img alt="cheese" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/minecraft_logo_icon_168974.png"></div>
-
-                <div class="example-tool" onclick="openModal('kahoot')"><img alt="cheese" src="https://static.vecteezy.com/ti/gratis-vector/p3/18970044-kahoot-logo-symbool-redactioneel-gratis-vector.jpg"></div>
-                <div class="example-tool" onclick="openModal('quiz')"><img alt="cheese" src="https://quizizz.com/media/resource/gs/quizizz-media/quizzes/b2968999-b637-4489-bbdc-1aeb0024745d"></div>
-                <div class="example-tool" onclick="openModal('craft')"><img alt="cheese" src="https://files.classcraft.com/classcraft-assets/favicon/apple-icon-1024x1024.png"></div>
-
-
-            </div>
+        </div>
+        <div class="toolslider">
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('hack')"><img alt="cheese" src="https://play-lh.googleusercontent.com/v0E848aPskTtdujYtTZzhRyGGcVkk8bKYFLm8NCP9IDEqBxmoDN13UOVrEcYV64WBMiK"></div>
+                        </li>
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('duo')"><img alt="cheese" src="https://1000logos.net/wp-content/uploads/2020/10/Duolingo-logo.png"></div>
+                        </li>
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('mine')"><img alt="cheese" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/minecraft_logo_icon_168974.png"></div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('kahoot')"><img alt="cheese" src="https://static.vecteezy.com/ti/gratis-vector/p3/18970044-kahoot-logo-symbool-redactioneel-gratis-vector.jpg"></div>
+                        </li>
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('quiz')"><img alt="cheese" src="https://quizizz.com/media/resource/gs/quizizz-media/quizzes/b2968999-b637-4489-bbdc-1aeb0024745d"></div>
+                        </li>
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('craft')"><img alt="cheese" src="https://files.classcraft.com/classcraft-assets/favicon/apple-icon-1024x1024.png"></div>
+                        </li>
+                      </ul>
+                </div>
+              </div>
+            
         </div>
     </div>
     <div class="modals">
@@ -125,5 +147,17 @@
     </div>
 </body>
 <script src="modals.js"></script>
+<script>
 
+    var splide = new Splide( '.splide', {
+        perPage: 3,
+        rewind : true,
+        padding: '10%',
+        gap: '20px',
+        autoWidth: true,
+        autoHeight: true,
+    } );
+
+    splide.mount();  
+</script>
 </html>

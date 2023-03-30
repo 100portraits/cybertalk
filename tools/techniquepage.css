@@ -55,8 +55,10 @@ body {
     font-size: 2.5em;
 }
 .text-content {
+    margin-top: 20px;
     padding-left: 20px;
-    width: 60vw;
+    padding-bottom: 20px;
+    
     background-color: white;
 }
 .short-desc {
@@ -66,6 +68,7 @@ body {
 }
 .columns {
     display: flex;
+    flex-direction: column;
 }
 .image1 {
     margin: 20px;
@@ -84,13 +87,15 @@ body {
 
 .example-tool img {
     background-color: white;
-    width: 18vw;
-    height: 18vw;
+    width: 15vw;
+    height: 15vw;
     cursor: pointer;
+    border-radius: 15px;
 }
 .example-tool {
     background-color: white;
     padding: 10px;
+    border-radius: 15px;
 }
 
 @media screen and (max-width: 800px) {
@@ -147,4 +152,7 @@ body {
     padding: 10px;
     border-radius: 12%;
     box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+}
+.splide__slide {
+ 
 }

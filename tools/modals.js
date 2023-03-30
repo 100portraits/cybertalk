@@ -1,4 +1,5 @@
 
+
 var modal = document.getElementsByClassName("modal");
 
 function openModal(name) {
