@@ -6,6 +6,14 @@
     <title>Storytelling | Digital Learning Techniques</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='techniquepage.css'>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">    
+
+
 </head>
 <body>
     <div class="navbar-box">
@@ -29,12 +37,26 @@
         </div>
         <div class="image1">
             <h3>Tools we recommend:</h3>
-            <div class="example-grid">
-                <div class="example-tool" onclick="openModal('cos')"><img alt="cheese" src="https://play-lh.googleusercontent.com/aN2kZU-TaRu0ZT5_XUnElDpmQg6YtjDsrE5DJqbu3W-KMiI9k19thatdQ-d6A5HcskA"></div>
-                <div class="example-tool" onclick="openModal('toon')"><img alt="cheese" src="https://toontastic.withgoogle.com/assets/img/favicon/android-chrome-512x512.png"></div>
-                <div class="example-tool" onclick="openModal('pup')"><img alt="cheese" src="https://is4-ssl.mzstatic.com/image/thumb/Purple122/v4/75/bb/e6/75bbe681-77ed-5f9c-8513-43716f03fcb2/source/256x256bb.jpg"></div>
 
-            </div>
+        </div>
+        <div class="toolslider">
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('cos')"><img alt="cheese" src="https://play-lh.googleusercontent.com/aN2kZU-TaRu0ZT5_XUnElDpmQg6YtjDsrE5DJqbu3W-KMiI9k19thatdQ-d6A5HcskA"></div>
+                        </li>
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('toon')"><img alt="cheese" src="https://toontastic.withgoogle.com/assets/img/favicon/android-chrome-512x512.png"></div>
+                        </li>
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('pup')"><img alt="cheese" src="https://is4-ssl.mzstatic.com/image/thumb/Purple122/v4/75/bb/e6/75bbe681-77ed-5f9c-8513-43716f03fcb2/source/256x256bb.jpg"></div>
+                        </li>
+                        
+                      </ul>
+                </div>
+              </div>
+            
         </div>
     </div>
     <div class="modals">
@@ -86,5 +108,18 @@
     </div>
 </body>
 <script src="modals.js"></script>
+<script>
+
+    var splide = new Splide( '.splide', {
+        perPage: 3,
+        rewind : true,
+        padding: '10%',
+        gap: '20px',
+        autoWidth: true,
+        autoHeight: true,
+    } );
+
+    splide.mount();  
+</script>
 
 </html>

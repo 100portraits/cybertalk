@@ -6,6 +6,13 @@
     <title>Audio and Video | Digital Learning Techniques</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='techniquepage.css'>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">    
+
 </head>
 <body>
     <div class="navbar-box">
@@ -29,15 +36,28 @@
         </div>
         <div class="image1">
             <h3>Tools we recommend:</h3>
-            <div class="example-grid">
-                <div class="example-tool" onclick="openModal('yt')"><img alt="cheese" src="https://static.vecteezy.com/system/resources/previews/018/930/575/original/youtube-logo-youtube-icon-transparent-free-png.png"></div>
-                <div class="example-tool" onclick="openModal('garage')"><img alt="cheese" src="https://upload.wikimedia.org/wikipedia/en/f/f7/GarageBand_App.png"></div>
-                <div class="example-tool" onclick="openModal('edpuzzle')"><img alt="cheese" src="https://edpuzzle.imgix.net/edpuzzle-logos/vertical-logo.png"></div>
 
-                <div class="example-tool" onclick="openModal('ted')"><img alt="cheese" src="https://ed.ted.com/teded-logo-600-600.png"></div>
-
-
-            </div>
+        </div>
+        <div class="toolslider">
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('yt')"><img alt="cheese" src="https://static.vecteezy.com/system/resources/previews/018/930/575/original/youtube-logo-youtube-icon-transparent-free-png.png"></div>
+                        </li>
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('garage')"><img alt="cheese" src="https://upload.wikimedia.org/wikipedia/en/f/f7/GarageBand_App.png"></div>
+                        </li>
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('edpuzzle')"><img alt="cheese" src="https://edpuzzle.imgix.net/edpuzzle-logos/vertical-logo.png"></div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('ted')"><img alt="cheese" src="https://ed.ted.com/teded-logo-600-600.png"></div>
+                        </li>
+                      </ul>
+                </div>
+              </div>
+            
         </div>
     </div>
     <div class="modals">
@@ -87,5 +107,18 @@
     </div>
 </body>
 <script src="modals.js"></script>
+<script>
+
+    var splide = new Splide( '.splide', {
+        perPage: 3,
+        rewind : true,
+        padding: '10%',
+        gap: '20px',
+        autoWidth: true,
+        autoHeight: true,
+    } );
+
+    splide.mount();  
+</script>
 
 </html>

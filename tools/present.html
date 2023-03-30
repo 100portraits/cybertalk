@@ -6,6 +6,13 @@
     <title>Presentation | Digital Learning Techniques</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='techniquepage.css'>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">    
+
 </head>
 <body>
     <div class="navbar-box">
@@ -26,13 +33,26 @@
         </div>
         <div class="image1">
             <h3>Tools we recommend:</h3>
-            <div class="example-grid">
-                <div class="example-tool" onclick="openModal('ppt')"><img alt="cheese" src="https://www.logo.wine/a/logo/Microsoft_PowerPoint/Microsoft_PowerPoint-Logo.wine.svg"></div>
-                <div class="example-tool" onclick="openModal('canva')"><img alt="cheese" src="https://www.bookmarks.design/media/image/canva-logo-maker.jpg"></div>
-                <div class="example-tool" onclick="openModal('prezi')"><img alt="cheese" src="https://assets.prezicdn.net/assets-versioned/coverservice-versioned/3624-0d86795/common/img/prezi-logo-for-share.png"></div>
-
-
-            </div>
+            
+        </div>
+        <div class="toolslider">
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('ppt')"><img alt="cheese" src="https://www.logo.wine/a/logo/Microsoft_PowerPoint/Microsoft_PowerPoint-Logo.wine.svg"></div>
+                        </li>
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('canva')"><img alt="cheese" src="https://www.bookmarks.design/media/image/canva-logo-maker.jpg"></div>
+                        </li>
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('prezi')"><img alt="cheese" src="https://assets.prezicdn.net/assets-versioned/coverservice-versioned/3624-0d86795/common/img/prezi-logo-for-share.png"></div>
+                        </li>
+                        
+                      </ul>
+                </div>
+              </div>
+            
         </div>
     </div>
     <div class="modals">
@@ -68,5 +88,17 @@
     </div>
 </body>
 <script src="modals.js"></script>
+<script>
 
+    var splide = new Splide( '.splide', {
+        perPage: 3,
+        rewind : true,
+        padding: '10%',
+        gap: '20px',
+        autoWidth: true,
+        autoHeight: true,
+    } );
+
+    splide.mount();  
+</script>
 </html>

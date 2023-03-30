@@ -6,6 +6,13 @@
     <title>Collaboration | Digital Learning Techniques</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='techniquepage.css'>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">    
+
 </head>
 <body>
     <div class="navbar-box">
@@ -28,14 +35,28 @@
         </div>
         <div class="image1">
             <h3>Tools we recommend:</h3>
-            <div class="example-grid">
-                <div class="example-tool" onclick="openModal('docs')"><img alt="cheese" src="https://cdn-icons-png.flaticon.com/512/5968/5968517.png"></div>
-                <div class="example-tool" onclick="openModal('miro')"><img alt="cheese" src="https://www.gend.co/hubfs/Miro-Logo-Square-Insight-Platforms.png"></div>
-                <div class="example-tool" onclick="openModal('canva')"><img alt="cheese" src="https://assets.stickpng.com/images/5842a622a6515b1e0ad75af9.png"></div>
-                <div class="example-tool" onclick="openModal('jam')"><img alt="cheese" src="https://cdn-icons-png.flaticon.com/512/2965/2965289.png"></div>
 
-
-            </div>
+        </div>
+        <div class="toolslider">
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('docs')"><img alt="cheese" src="https://cdn-icons-png.flaticon.com/512/5968/5968517.png"></div>
+                        </li>
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('miro')"><img alt="cheese" src="https://www.gend.co/hubfs/Miro-Logo-Square-Insight-Platforms.png"></div>
+                        </li>
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('canva')"><img alt="cheese" src="https://assets.stickpng.com/images/5842a622a6515b1e0ad75af9.png"></div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('jam')"><img alt="cheese" src="https://cdn-icons-png.flaticon.com/512/2965/2965289.png"></div>
+                        </li>
+                      </ul>
+                </div>
+              </div>
+            
         </div>
     </div>
     <div class="modals">
@@ -89,5 +110,18 @@
     </div>
 </body>
 <script src="modals.js"></script>
+<script>
+
+    var splide = new Splide( '.splide', {
+        perPage: 3,
+        rewind : true,
+        padding: '10%',
+        gap: '20px',
+        autoWidth: true,
+        autoHeight: true,
+    } );
+
+    splide.mount();  
+</script>
 
 </html>

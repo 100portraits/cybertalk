@@ -6,6 +6,13 @@
     <title>Quizzes and Polling | Digital Learning Techniques</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='techniquepage.css'>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">    
+
 </head>
 <body>
     <div class="navbar-box">
@@ -31,12 +38,26 @@ Similarly to other techniques, digital polling can promote critical thinking and
         </div>
         <div class="image1">
             <h3>Tools we recommend:</h3>
-            <div class="example-grid">
-                <div class="example-tool" onclick="openModal('menti')"><img alt="cheese" src="https://yt3.googleusercontent.com/ytc/AL5GRJV4ChPZFE8YmuWuKqI02K9G4zXCChS8RV0YKEJwmA=s900-c-k-c0x00ffffff-no-rj"></div>
-                <div class="example-tool" onclick="openModal('kahoot')"><img alt="cheese" src="https://static.vecteezy.com/ti/gratis-vector/p3/18970044-kahoot-logo-symbool-redactioneel-gratis-vector.jpg"></div>
-                <div class="example-tool" onclick="openModal('quiz')"><img alt="cheese" src="https://images.yourstory.com/cs/images/companies/Quizizz-1589544658023.png"></div>
 
-            </div>
+        </div>
+        <div class="toolslider">
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('menti')"><img alt="cheese" src="https://yt3.googleusercontent.com/ytc/AL5GRJV4ChPZFE8YmuWuKqI02K9G4zXCChS8RV0YKEJwmA=s900-c-k-c0x00ffffff-no-rj"></div>
+                        </li>
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('kahoot')"><img alt="cheese" src="https://static.vecteezy.com/ti/gratis-vector/p3/18970044-kahoot-logo-symbool-redactioneel-gratis-vector.jpg"></div>
+                        </li>
+                          <li class="splide__slide">
+                            <div class="example-tool" onclick="openModal('quiz')"><img alt="cheese" src="https://images.yourstory.com/cs/images/companies/Quizizz-1589544658023.png"></div>
+                        </li>
+                        
+                      </ul>
+                </div>
+              </div>
+            
         </div>
     </div>
     <div class="modals">
@@ -86,5 +107,18 @@ Similarly to other techniques, digital polling can promote critical thinking and
     </div>
 </body>
 <script src="modals.js"></script>
+<script>
+
+    var splide = new Splide( '.splide', {
+        perPage: 3,
+        rewind : true,
+        padding: '10%',
+        gap: '20px',
+        autoWidth: true,
+        autoHeight: true,
+    } );
+
+    splide.mount();  
+</script>
 
 </html>
