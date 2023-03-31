@@ -4,6 +4,9 @@
     font-weight: normal;
     font-style: normal;
 }
+html {
+    font-weight: 300;
+}
 .navbar-box {
     font-size: large;
     background-color: #ADD0F8;
