@@ -154,7 +154,7 @@ h2 {
     height: 300px;
     width: 100%;
     background-color: white;
-    padding: 20px;
+    padding: 40px;
 }
 .citation {
     color: blue;
@@ -167,16 +167,19 @@ h2 {
 .resource-container {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
 }
 .resource-container div {
     display: flex;
+    align-items: start;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     border-radius: 15px;
-    height: 100px;
     width: 100%;
     background-color: #eeeeee;
-    padding: 20px;
+    padding: 30px;
+}
+.fact p {
+    font-size: 1.2em;
 }

@@ -74,8 +74,7 @@ a:hover {
 }
 
 .footer-box {
-    position: absolute;
-    bottom: 0;
+
     width: 100%;
     margin: 0;
     background-color: #ADD0F8;
@@ -133,4 +132,14 @@ a:hover {
     a {
         font-size: small; 
     }
+}
+.p1, .p2 {
+    padding: 40px;
+    font-size: 1.2em;
+}
+.p1 {
+    color: black;
+}
+.p2 {
+    background-color: white;
 }
