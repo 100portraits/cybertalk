@@ -67,6 +67,8 @@ body {
     max-width: 675px;
     padding-left:20px;
     font-size: 1.2em;
+    font-weight: 300;
+
 }
 .search-in{
     margin-left: 20px;
@@ -92,6 +94,8 @@ a:hover {
     margin:0;
     font-family: 'SF Pro Text Light', sans-serif;
     font-size: medium;
+        font-weight: 300;
+
 }
 
 .header-container {
@@ -110,6 +114,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+        font-weight: 300;
+
   }
   
   .image-container {
@@ -141,6 +147,8 @@ a:hover {
 .p1, .p2 {
     padding: 40px;
     font-size: 1.2em;
+        font-weight: 300;
+
 }
 .p1 {
     color: black;

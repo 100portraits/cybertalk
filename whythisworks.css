@@ -67,6 +67,8 @@ body {
     max-width: 675px;
     padding-left:20px;
     font-size: 1.2em;
+    font-weight: 300;
+
 }
 .search-in{
     margin-left: 20px;
@@ -89,6 +91,8 @@ a:hover {
     justify-content: space-between;
 }
 .footer-box h3, .footer-box p{
+    font-weight: 300;
+
     padding: 20px;
     margin:0;
     font-family: 'SF Pro Text Light', sans-serif;
@@ -152,6 +156,8 @@ h2 {
 }
 .facts-container div {
     display: flex;
+        font-weight: 300;
+
     flex-direction: column;
     justify-content: center;
     border-radius: 15px;
@@ -176,6 +182,8 @@ h2 {
 }
 .resource-container div {
     display: flex;
+    font-weight: 300;
+
     align-items: start;
     flex-direction: column;
     justify-content: flex-start;
@@ -186,4 +194,6 @@ h2 {
 }
 .fact p {
     font-size: 1.2em;
+    font-weight: 300;
+
 }
