@@ -60,6 +60,8 @@ body {
 
 .header-innovative {
     padding: 20px;
+        font-weight: 300;
+
 }
 .short-desc {
     max-width: 675px;
